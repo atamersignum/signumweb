@@ -1,0 +1,69 @@
+.windesk-main-wrapper {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        z-index: 0;
+    }
+    .text-wrapper {
+        position: absolute;
+        left: 0px;
+        width: 50%;
+        top: 30%;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #353F4B;
+        opacity: 0.7;
+        animation: 1s ease-out 0s 1 windeskMainSliderFromLeft;
+    p {
+        color: #FFF;
+        max-width: 65%;
+        font-family: $fregular;
+    }
+    }
+}
+
+
+  @media (min-width: 1740px) {
+    .windesk-main-wrapper .text-wrapper p {
+        font-size: 36px;
+        line-height: 48px;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1739px) {
+    .windesk-main-wrapper .text-wrapper{
+        height: 200px;
+         p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    .windesk-main-wrapper .text-wrapper{
+        height: 130px;
+         p {
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 55%;
+        }
+}
+  }
+
+  @media (max-width: 768px) {
+    .windesk-main-wrapper {
+        .text-wrapper {
+        top: 25%;
+        width: 70%;
+        height: 70px;
+         p {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 80%;
+    }   
+    }
+  }
+}

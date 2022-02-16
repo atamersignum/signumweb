@@ -1,0 +1,258 @@
+.text-image-blocks-wrapper   {
+    background-color: #F4F4F4;
+    font-family: $fregular;
+    .block-area {
+        margin-right: auto;
+        margin-left: auto;
+        position: $p1;
+        img {
+            width: 100%;
+            max-width: 780px;
+        }
+        .text-image-block-area {
+            background-color: white;
+            max-width: 580px;
+            h2 {
+                font-family: $fbold;
+                margin-bottom: 20px;
+                line-height: 28px;
+            }
+            h3 {
+                font-family: $fbold;
+                margin-bottom: 10px;
+            }
+            ul {
+                li {
+                    list-style-position: inside;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1500px) {
+    .text-image-blocks-wrapper   {
+        .block-area {
+            width: 60%;
+            .text-image-block-area {
+                padding: 40px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    .text-image-blocks-wrapper   {
+        .block-area {
+            width: 90%;
+            .text-image-block-area {
+                padding: 40px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+    .text-image-blocks-wrapper   {
+        
+        .block-area {
+            width: 90%;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            .text-image-block-area {
+                padding: 30px;
+                h2 {
+                    font-size: 18px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p, ul > li {
+                    font-size: 16px !important;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .left-text {
+        .text-image-block-area {
+            top: 100px !important;
+        }
+    }
+    .right-text {
+        .text-image-block-area {
+            top: 100px !important;
+        }
+    }
+}
+@media (max-width: 959px) {
+    .text-image-blocks-wrapper   {
+        
+        .block-area {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            .text-image-block-area {
+                max-width: 100%;
+                padding: 30px;
+                background-color: rgba(255, 255, 255,0.9);
+                h2 {
+                    font-size: 18px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p, ul > li {
+                    font-size: 16px !important;
+                    line-height: 28px;
+                }
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 960px) {
+    .right-text {
+        position: relative;
+        height: 100%;
+        img {
+            z-index: 0;
+            display: block;
+            float: left;
+        }
+        .text-image-block-area {
+            position: $p2;
+            top: 120px;
+            right: 0px;
+            z-index: 1;
+            width: 100%;
+           
+        }
+    }
+    .left-text {
+        position: relative;
+        height: 100%;
+        img {
+            z-index: 0;
+            display: block;
+            float:right;
+        }
+        .text-image-block-area {
+            left: 0px;
+            z-index: 1;
+            width: 100%;
+            position: $p2;
+            top: 120px;
+        }
+    }
+    .text-image-blocks-wrapper   {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    .block-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .text-image-block-area {
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    }
+}
+
+
+
+
+
+@media (min-width: 960px) {
+
+.mask-animation {
+    overflow: hidden;
+    position: relative;
+    transform: translateZ(0);
+}
+.mask-animation img {
+    display: block;
+}
+
+// wipe-in-up
+.mask-animation.wipe-in-up {
+    clip-path: inset(100% 0 0 0);
+    -webkit-clip-path: inset(100% 0 0 0);
+}
+.mask-animation.wipe-in-up.active, .active > .mask-animation.wipe-in-up {
+    animation: wipe-in-up 1s ease .25s forwards;
+}
+// wipe-out-up
+.mask-animation.wipe-out-up {
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+}
+.mask-animation.wipe-out-up.active, .active > .mask-animation.wipe-out-up {
+    animation: wipe-out-up 1s ease .25s forwards;
+}
+// wipe-in-right
+.mask-animation.wipe-in-right {
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+}
+.mask-animation.wipe-in-right.active, .active > .mask-animation.wipe-in-right {
+    animation: wipe-in-right 1s ease .25s forwards;
+}
+// wipe-out-right
+.mask-animation.wipe-out-right {
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+}
+.mask-animation.wipe-out-right.active, .active > .mask-animation.wipe-out-right {
+    animation: wipe-out-right 1s ease .25s forwards;
+}
+// wipe-in-down
+.mask-animation.wipe-in-down {
+    clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: inset(0 0 100% 0);
+}
+.mask-animation.wipe-in-down.active, .active > .mask-animation.wipe-in-down {
+    animation: wipe-in-down 1s ease .25s forwards;
+}
+// wipe-out-down
+.mask-animation.wipe-out-down {
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+}
+.mask-animation.wipe-out-down.active, .active > .mask-animation.wipe-out-down {
+    animation: wipe-out-down 1s ease .25s forwards;
+}
+// wipe-in-left
+.mask-animation.wipe-in-left {
+    clip-path: inset(0 0 0 100%);
+    -webkit-clip-path: inset(0 0 0 100%);
+}
+.mask-animation.wipe-in-left.active, .active > .mask-animation.wipe-in-left {
+    animation: wipe-in-left 1s ease .25s forwards;
+}
+// wipe-out-left
+.mask-animation.wipe-out-left {
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+}
+.mask-animation.wipe-out-left.active, .active > .mask-animation.wipe-out-left {
+    animation: wipe-out-left 1s ease .25s forwards;
+}
+// ken-burns
+.mask-animation.ken-burns img {
+    transform: scale(1.1);
+}
+.active .mask-animation.ken-burns img, .active > .mask-animation.ken-burns img{
+    animation: ken 2s ease forwards;
+}
+// lazyloaded
+.lazyloaded {
+    transition: opacity .25s;
+}
+}

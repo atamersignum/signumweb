@@ -1,0 +1,116 @@
+#content-text-wrapper {
+    background-color: #F4F4F4;
+    .content-text {
+        color: $g1color;
+        h2 {
+            font-size: 20px;
+            line-height: 36px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: $fbold;
+        }
+        ul {
+            margin-bottom: 30px;
+            li {
+                list-style-position: inside;
+                list-style-type: disc;
+            }
+        }
+    }
+}
+@media (min-width: 1199px) {
+#content-text-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .content-text {
+    .text-type1 {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 45px;
+        width: 86%;
+    }
+    .text-type2 {
+        font-size: 18px;
+        line-height: 36px;
+        padding-left: 140px;
+        border-left: 1px solid $g1color;
+        margin-bottom: 45px;
+    }
+    .text-type3 {
+        font-size: 20px;
+        line-height: 36px;
+        width: 86%;
+
+    }
+    .text-type4 {
+        font-size: 20px;
+        line-height: 36px;
+        font-family: $fbold;
+    }
+    }
+}
+}
+@media only screen and (min-width: 991px) and (max-width: 1198px) {
+#content-text-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .content-text {
+    .text-type1 {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .text-type2 {
+        font-size: 16px;
+        line-height: 28px;
+        padding-left: 30px;
+        border-left: 1px solid $g1color;
+        margin-bottom: 30px;
+    }
+    .text-type3 {
+        font-size: 16px;
+        line-height: 28px;
+        width: 90%;
+
+    }
+    .text-type4 {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $fbold;
+    }
+    }
+}    
+}
+@media (max-width: 990px) {
+#content-text-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .content-text {
+    .text-type1 {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .text-type2 {
+        font-size: 16px;
+        line-height: 28px;
+        padding-left: 30px;
+        border-left: 1px solid $g1color;
+        margin-bottom: 30px;
+    }
+    .text-type3 {
+        font-size: 16px;
+        line-height: 28px;
+        width: 90%;
+
+    }
+    .text-type4 {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $fbold;
+    }
+    }
+}    
+}

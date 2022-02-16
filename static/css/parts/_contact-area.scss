@@ -1,0 +1,199 @@
+#contact-area-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F4F4F4;
+    .contact-area {
+        @include centerer(86%);
+    }
+    
+    .contact-telephone {
+        width: 100%;
+        max-width: 265px;
+        margin-left: auto;
+        text-align: center;
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        a {
+            font-size: 40px;
+            line-height: 48px;
+            color:#000;
+            &:hover {
+                color: $bcolor;
+            }
+        }
+    }
+}
+
+
+.contact-form {
+    
+    background-color: #FFF;
+    padding: 30px;
+    .widget-head {
+      width: 100%;
+      background-color: #EE4423;
+      color: #FFF;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-family: $fregular;
+      font-weight: normal;
+      font-size: 18px;
+    }
+    .widget-content {
+      padding: 0px;
+      margin-top: 20px;
+    }
+    .widget-form-label {
+     color: #353F4B;
+     font-family: $fregular;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    .form-control {
+      height: 45px;
+    }
+    textarea {
+      border-radius: 3px;
+      font-size: 16px;
+      height: 225px !important;
+      letter-spacing: 0;
+      padding: 8px 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn {
+      @include centerer(50%);
+      margin-top: 20px;
+      background-color: #EE4423 !important;
+      border-color: #EE4423 !important;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 18px;
+      display: block;
+      transition: background-color .2s, border .2s, color .2s;
+        -webkit-font-smoothing: antialiased;
+      &:hover {
+        background-color: #c12d10 !important;
+        border-color: #c12d10 !important;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .form-control {
+        background-color: #f9f9f9;
+        box-shadow: none;
+    }
+    .contact-subtitle {
+        font-size: 14px;
+        color: #353F4B;
+        line-height: 24px;
+    }
+  }
+  
+  .error {
+      width: 100%;
+      border: 2px solid #ab0600;
+      background-color: #BD201E;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+  .error li {
+      background-image: url(../images/erroricon.png);
+      background-repeat: no-repeat;
+      color: #FFF;
+      list-style-type: none;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      background-position: left center;
+  }
+  .success {
+      width: 100%;
+      border: 2px solid #44ab44;
+      background-color: #5cb85c;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+  .success li {
+      background-image: url(../images/successicon.png);
+      background-repeat: no-repeat;
+      color: #FFF;
+      list-style-type: none;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      background-position: left center;
+  }
+
+@media (min-width: 992px) {
+#contact-area-wrapper {
+    .contact-area {
+        .contact-telephone {
+            margin-top: 300px;
+        }
+    }
+}    
+}
+@media (min-width: 1500px) {
+    #contact-area-wrapper {
+        .contact-area {
+            @include centerer(86%);
+        }
+        .contact-form {
+            @include centerer(50%);
+        }
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1499px) {
+#contact-area-wrapper {
+    .contact-form {
+        @include centerer(80%);
+    }
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #contact-area-wrapper {
+        .contact-area {
+            @include centerer(96%);
+        }
+        .contact-form {
+            @include centerer(84%);
+        }
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+    .contact-form {
+        @include centerer(80%);
+    }
+}
+@media (max-width: 539px) {
+    #contact-area-wrapper {
+        .contact-area {
+            max-width: 92%;
+        }
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .contact-telephone {
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    #contact-area-wrapper {
+        padding-top: 30px;
+    padding-bottom: 30px;
+        .contact-telephone {
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+    }
+}

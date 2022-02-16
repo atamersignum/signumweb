@@ -1,0 +1,110 @@
+#works-in-progress-wrapper {
+    .works-main-wrapper {
+        @include centerer(1600px);
+        padding-right: 15px;
+        padding-left: 15px;
+        h2 {
+            font-family: $fregular;
+        }
+    }
+    .content-wrapper {
+        color: #000000;
+        .text-wrapper {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        img {
+            width: 100%;
+        }
+        .detail-link {
+            display: block;
+            margin-left: 10px;
+            width: 100%;
+            max-width: 180px;
+            color: #000000;
+            font-size: 18px;
+            text-align: center;
+            border-color: #000000;
+            border-radius: 8px;
+            transition: background-color .2s, border .2s, color .2s;
+            -webkit-font-smoothing: antialiased;
+            &:hover{
+                background-color: $bcolor;
+                border-color: $bcolor;
+                color: white;
+            }
+        }
+        
+    }
+}
+@media (max-width: 991px) {
+#works-in-progress-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 18px;
+    }
+    .title-bottom-line-wrapper {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+}
+.content-wrapper {
+    .text-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        h3 {
+            font-size:18px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            max-height: 160px;
+            overflow: hidden;
+        }
+
+    }
+    .detail-link {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+} 
+}
+@media (min-width: 992px) {
+#works-in-progress-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+        font-size: 44px;
+ 
+    }
+    .title-bottom-line-wrapper {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+.content-wrapper {
+    .text-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        h3 {
+            font-size:24px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            max-height: 160px;
+            overflow: hidden;
+        }
+
+    }
+    .detail-link {
+        margin-top: 30px;
+    }
+} 
+}
+

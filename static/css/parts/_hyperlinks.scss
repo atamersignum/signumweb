@@ -1,0 +1,159 @@
+#hyperlinks-wrapper {
+    @include centerer (93%);
+    padding-top: 60px;
+    padding-bottom: 120px;
+    h2 {
+        font-size: 44px;
+    }
+    .title-bottom-line-wrapper {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .swiper-wrapper {
+      padding-top: 20px;
+      padding-left: 38px;
+      padding-bottom: 15px;
+    }
+
+
+    .swiper-slide {
+      width: 100%;
+      max-width: 129px;
+      .hyperlink {
+        width: 120px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hyperlink1 {
+          @include hiperlinkcreater(1);
+      }
+      .hyperlink2 {
+          @include hiperlinkcreater(2);
+      }
+      .hyperlink3 {
+          @include hiperlinkcreater(3);
+      }
+      .hyperlink4 {
+          @include hiperlinkcreater(4);
+      }
+      .hyperlink5 {
+          @include hiperlinkcreater(5);
+      }
+      .hyperlink6 {
+          @include hiperlinkcreater(6);
+      }
+      .hyperlink7 {
+          @include hiperlinkcreater(7);
+      }
+      .hyperlink8 {
+          @include hiperlinkcreater(8);
+      }
+      .hyperlink9 {
+          @include hiperlinkcreater(9);
+      }
+      .hyperlink10 {
+          @include hiperlinkcreater(10);
+      }
+      .hyperlink11 {
+          @include hiperlinkcreater(11);
+      }
+      .hyperlink12 {
+          @include hiperlinkcreater(12);
+      }
+      .hyperlink13 {
+          @include hiperlinkcreater(13);
+      }
+      .hyperlink14 {
+          @include hiperlinkcreater(14);
+      }
+      .hyperlink15 {
+          @include hiperlinkcreater(15);
+      }
+      .hyperlink16 {
+          @include hiperlinkcreater(16);
+      }
+      .hyperlink17 {
+          @include hiperlinkcreater(17);
+      }
+      .hyperlink18 {
+          @include hiperlinkcreater(18);
+      }
+      .hyperlink19 {
+          @include hiperlinkcreater(19);
+      }
+      .hyperlink20 {
+          @include hiperlinkcreater(20);
+      }
+      .hyperlink21 {
+          @include hiperlinkcreater(21);
+      }
+      .hyperlink22 {
+          @include hiperlinkcreater(22);
+      }
+      .hyperlink23 {
+          @include hiperlinkcreater(23);
+      }
+      .hyperlink24 {
+          @include hiperlinkcreater(24);
+      }
+      .hyperlink25 {
+          @include hiperlinkcreater(25);
+      }
+      .hyperlink26 {
+          @include hiperlinkcreater(26);
+      }
+      .hyperlink27 {
+          @include hiperlinkcreater(27);
+      }
+      .hyperlink28 {
+          @include hiperlinkcreater(28);
+      }
+      .hyperlink29 {
+          @include hiperlinkcreater(29);
+      }
+      .hyperlink30 {
+          @include hiperlinkcreater(30);
+      }
+  
+    }
+    .swiper-button-prev2 {
+    //   background-image: url(../images/scrool2-prev.png) !important;
+    background-image: none;
+      background-repeat: no-repeat;
+      position: $p2;
+      top: 60px;
+      left: 0px;
+      z-index: 2;
+      width: 29px;
+      height: 39px;
+    }
+
+    .swiper-button-next2 {
+    //   background-image: url(../images/scrool2-next.png) !important;
+    background-image: none;
+      background-repeat: no-repeat;
+      position: $p2;
+      top: 60px;
+      right: 0px;
+      z-index: 2;
+      width: 25px;
+      height: 39px;
+    }
+  
+  }
+@media (max-width: 991px) {
+  #hyperlinks-wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      h2 {
+          font-size: 18px;
+      }
+      .title-bottom-line-wrapper {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+  }
+}

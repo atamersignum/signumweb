@@ -1,0 +1,342 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>SignumTTE</title>
+
+    <link rel="stylesheet" href="{%static '/css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{%static 'css/swiper.css'%}">
+    <link rel="stylesheet" href="{%static 'css/jquery.fancybox.css'%}" />
+
+</head>
+<body>
+<div id="header-wrapper">
+    <nav id="header-menu" class="navbar navbar-default">
+    <div class="container">
+    
+    <div class="header-menu-wrapper">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Windesk</a>
+        </div><!--navbar-header bitti-->
+    
+        <div class="collapse navbar-collapse" id="collapse-navbar">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Windesk Platformu</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Çözümler<span class="caret"></span></a>
+            
+            <ul class="dropdown-menu" role="menu">
+            
+            <div class="dropdown-content-wrapper">
+            
+            <div class="row">
+            
+            <div class="col-md-4 hidden-xs">
+            <span class="tanitim">Windesk, tesislerin yönetsel faaliyetlerine, içinde yaşayan paydaşların verimliliğine ve etkinliğine odaklanan profesyonel bir yazılım platformudur. 
+                Postcorona virüs süreciyle başlayan değişim rüzgarı tesis alanlarda çalışan insan sayısı, alan planlaması, enerji ve iklimlendirme sistemlerinin etkin yönetimi, varlıkların yaşam döngüsü, hizmetlerin değişime uygun iyileştirilmesi, sensör alt yapısının hedeflere uygun tasarlanması 
+                gibi bütünleşik otomasyon sistemleri tesis İşletmenleri için başarı anahtarı olacaktır. </span>
+            
+            </div><!--1. Kolon bitti-->
+            
+            <div class="col-md-3 col-sm-4 col-xs-12">
+            
+            <li><a href="/merkezi_servis_masasi">Merkezi Servis Masası</a></li>
+            
+            <li><a href="/performans_hizmet_sozlesme_yonetimiz">Performans Tabanlı Hizmet Sözleşme Yönetimi</a></li>
+    
+            <li><a href="/bina_operasyonlari">Bina Operasyonları ve Teknik Bakım Yönetimi</a></li>
+    
+            <li><a href="/avm_yonetimi">AVM Yönetimi</a></li>
+    
+            <li>
+                <a href="/entegre_tesis_yonetimi">Entegre Tesis Yönetim Platformu</a>
+                <ul>
+                    <li><a class="sub-list-item" href="/alan_yonetimi"><i class="arrow-right arrow-right1"></i>Alan Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/varlik_yonetimi"><i class="arrow-right arrow-right1"></i>Varlık Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/bakim_onarim_yonetimi"><i class="arrow-right arrow-right1"></i>Bakım ve Onarım Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/hizmet_yonetimi"><i class="arrow-right arrow-right1"></i>Hizmet Yönetimi</a></li>
+                </ul>
+            </li>
+    
+            
+            
+            </div><!--2. Kolon bitti-->
+            
+            <div class="col-md-3 col-sm-4 col-xs-12">
+            
+            <li>
+                <ul>
+                    <li><a class="sub-list-item" href="/personel_yonetimi"><i class="arrow-right arrow-right1"></i>Personel Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/is_emri_yonetimi"><i class="arrow-right arrow-right1"></i>İş Emri Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/sozlesme_yonetimi"><i class="arrow-right arrow-right1"></i>Sözleşme Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/depo_malzeme_yonetimi"><i class="arrow-right arrow-right1"></i>Depo - Malzeme Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/hakedis_uygulamasi"><i class="arrow-right arrow-right1"></i>Hakediş Uygulaması</a></li>
+                    <li><a class="sub-list-item" href="/guvenlik_yonetimi"><i class="arrow-right arrow-right1"></i>Güvenlik Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/denetim_yonetimi"><i class="arrow-right arrow-right1"></i>Denetim Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/enerji_yonetimi"><i class="arrow-right arrow-right1"></i>Enerji Yönetimi</a></li>
+                    <li><a class="sub-list-item" href="/raporlama"><i class="arrow-right arrow-right1"></i>Raporlama</a></li>
+                    <li><a class="sub-list-item" href="/merkezi_yardim_masasi"><i class="arrow-right arrow-right1"></i>Merkezi Yardım Masası</a></li>
+                </ul>
+            </li>
+            
+            </div><!--3. Kolon bitti-->
+            
+            <div class="col-md-2 col-sm-4 col-xs-12">
+            
+            <li><a href="/yellowfin_bi_platform">Yellowfin Bl Platform</a></li>
+            
+            <li><a href="/hazir_entegrasyonlar">Hazır Entegrasyonlar</a></li>
+            
+            </div><!--4. Kolon bitti-->
+            
+            </div><!--ROW bitti-->
+            
+            </div><!--dropdown-content-wrapper bitti-->
+            <div class="dropdown-content-wrapper">
+            <div class="sub-content">
+            <a href="#"></a>
+            <div class="clear"></div>
+            </div><!--sub-content bitti-->  
+            </div><!--dropdown-content-wrapper bitti--> 
+            </ul>
+            </li>
+            <li><a href="/egilimler">Eğilimler</a></li>
+    
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projeler<span class="caret"></span></a>
+            
+                <ul class="dropdown-menu" role="menu">
+                
+                <div class="dropdown-content-wrapper">
+                
+                <div class="row">
+                
+                <div class="col-md-2 hidden-xs">
+                <span class="tanitim">Signumtte bugüne kadar Windesk Entegre Tesis Yönetimi Çözümü ile bir çok başarılı projeye imza atmıştır,  Devam etmekte olan güncel projelerimizden bir kaçını sizlerle paylaşmak istedik.</span>
+                
+                </div><!--1. Kolon bitti-->
+                
+                <div class="col-md-10 col-xs-12">
+                <li><a class="projects-link"  href="/projeler"><img src="{%static 'images/proje1.png'%}"><span>Galataport İstanbul</span></a></li>
+                <li><a class="projects-link" href="/projeler"><img src="{%static 'images/proje2.png'%}"><span>Ankara Etlik Şehir Hastanesi</span></a></li>
+                <li><a class="projects-link" href="/projeler"><img src="{%static 'images/proje3.png'%}"><span>Rönesans Sağlık Hizmetleri</span></a></li>
+                <li><a class="projects-link" href="/projeler"><img src="{%static 'images/proje4.png'%}"><span>İstanbul Finans Merkezi</span></a></li>
+                <li><a class="projects-link" href="/projeler"><img src="{%static 'images/proje5.png'%}"><span>Selway Outlet</span></a></li>
+                <div class="clear"></div>
+                </div><!--2. Kolon bitti-->
+                
+                </div><!--ROW bitti-->
+                
+                </div><!--dropdown-content-wrapper bitti-->
+                <div class="dropdown-content-wrapper">
+                <div class="sub-content">
+                <a href="#"></a>
+                <div class="clear"></div>
+                </div><!--sub-content bitti-->  
+                </div><!--dropdown-content-wrapper bitti--> 
+                </ul>
+                </li>
+    
+    
+    
+    
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bizi Tanıyın<span class="caret"></span></a>
+            
+                <ul class="dropdown-menu" role="menu">
+                
+                <div class="dropdown-content-wrapper">
+                
+                <div class="row">
+                
+                <div class="col-md-4 hidden-xs">
+                <span class="tanitim">Signum tte  2009 yılından itibaren iş uygulamaları yatırımlarımızı kendimize ait WinDesk Platform ortamında gerçekleştirerek  ilerlemekteyiz.</span>
+                
+                </div><!--1. Kolon bitti-->
+                
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                
+                <li><a href="/hakkimizda">Hakkımızda</a></li>
+                
+                <li><a href="/haberler_ve_duyurular">Haber ve Duyurular</a></li>
+        
+                <li><a href="/kariyer">Signumtte’de Kariyer</a></li>
+    
+                </div><!--2. Kolon bitti-->
+                
+                </div><!--ROW bitti-->
+                
+                </div><!--dropdown-content-wrapper bitti-->
+                <div class="dropdown-content-wrapper">
+                <div class="sub-content">
+                <a href="#"></a>
+                <div class="clear"></div>
+                </div><!--sub-content bitti-->  
+                </div><!--dropdown-content-wrapper bitti--> 
+                </ul>
+                </li>
+            <li class="last-child"><a href="/bilgi_isteyin">Bilgi İsteyin</a></li>
+            </ul>
+            
+    </div><!--navbar-collapse bitti-->
+    </div><!--header-menu-wrapper bitti-->
+    </div><!--container bitti-->
+    </nav>
+    </div><!--header-wrapper bitti-->
+    {% block content %}  
+    
+    {% endblock %}
+  
+     <!--  ------------------------------------------------------  -->
+     <div id="footer-wrapper">
+        <div id="footer">
+        <div class="row">
+        <div class="col-md-4 col-sm-4 hidden-xs">
+        <h1 class="footer-logo-title"><a href="/">windesk platformu</a></h1>
+        <div class="widget footer-menu">
+        <div class="widget-content">
+            <ul class="widget-list">
+            <h4><a href="/cozumler">Çözümler</a></h4>
+            <li><a href="/merkezi_servis_masasi">Merkezi Servis Masası</a></li>
+            <li><a href="/performans_tabanli_hizmet_sozlesme_yonetimi">Performans Tabanlı Hizmet Sözleşmeleri Yönetimi</a></li>
+            <li><a href="/bina_operasyonlari_ve_teknik_bakim_yonetimi">Bina Operasyonları ve Teknik Bakım Yönetimi</a></li>
+            <li><a href="/avm_yonetimi">AVM Yönetimi</a></li>
+            <li><a href="/entegre_tesis_yonetimi">Entegre Tesis Yönetim Platformu</a>
+                <ul>
+                <li><a href="/alan_yonetimi"><i></i>Alan Yönetimi</a></li>
+                <li><a href="/varlik_yonetimi"><i></i>Varlık Yönetimi</a></li>
+                <li><a href="/bakim_onarim_yonetimi"><i></i>Bakım ve Onarım Yönetimi</a></li>
+                <li><a href="/hizmet_yonetimi"><i></i>Hizmet Yönetimi</a></li>
+                <li><a href="/personel_yonetimi"><i></i>Personel Yönetimi</a></li>
+                <li><a href="/is_emri_yonetimi"><i></i>İş Emri Yönetimi</a></li>
+                <li><a href="/sozlesme_yonetimi"><i></i>Sözleşme Yönetimi</a></li>
+                <li><a href="/depo_malzeme_yonetimi"><i></i>Depo - Malzeme Yönetimi</a></li>
+                <li><a href="/hakedis_yonetimi"><i></i>Hakediş Yönetimi</a></li>
+                </ul>
+            </li>
+            </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        </div><!-- KOLON (1. kolon) BİTTİ-->
+        
+        
+        <div class="col-md-4 col-sm-4 hidden-xs">
+        <div class="widget footer-menu second-footer-menu">
+        <div class="widget-content">
+            <ul class="widget-list">
+            <li><a href="#">Entegre Tesis Yönetim Platformu</a>
+            <ul>
+            <li><a href="/guvenlik_yonetimi"><i></i>Güvenlik Yönetimi</a></li>
+            <li><a href="/denetim_yonetimi"><i></i>Denetim Yönetimi</a></li>
+            <li><a href="/enerji_yonetimi"><i></i>Enerji Yönetimi</a></li>
+            <li><a href="/raporlama"><i></i>Raporlama</a></li>
+            <li><a href="/merkezi_yardim_masasi.html"><i></i>Merkezi Yardım Masası</a></li>
+            </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </li>
+        </ul>
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        <div class="widget footer-menu">
+            <div class="widget-content">
+                <ul class="widget-list">
+                    <li><a href="/yellowfin_bi_platform"><i></i>Yellowfin Bl Platform</a></li>
+                    <li><a href="/hazir_entegrasyonlar.html"><i></i>Hazır Entegrasyonlar</a></li>
+                </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        <div class="widget footer-menu">
+        <div class="widget-content">
+            <ul class="widget-list">
+            <h4><a href="/egilimler">Eğilimler</a></h4>
+          
+            </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        <div class="widget footer-menu">
+            <div class="widget-content">
+            <ul class="widget-list">
+                <h4>Son Projeler</h4>
+                <li><a href="/projeler">Galataport Istanbul</a></li>
+                <li><a href="/projeler">Ankara Etlik Şehir Hastanesi</a></li>
+                <li><a href="/projeler">Rönesans Sağlık Hizmetleri</a></li>
+                <li><a href="/projeler">İstanbul Finans Merkezi</a></li>
+                <li><a href="/projeler">Selway Outlet</a></li>
+        </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        </div><!-- KOLON (2. kolon) BİTTİ-->
+        
+        <div class="col-md-4 col-sm-4 col-xs-12">
+        
+        
+        <div class="widget footer-menu">
+        <div class="widget-content">
+        <ul class="widget-list">
+        <h4>Bizi Tanıyın</h4>
+        <li><a href="/hakkimizda">Hakkımızda</a></li>
+        <li><a href="/haberler_ve_duyurular">Haberler ve Duyurular</a></li>
+        <li><a href="/kariyer">Signumtte’de Kariyer</a></li>
+        </ul><!-- widget-list(footer-menu) BİTTİ-->
+        </div><!-- widget-content(footer-menu) BİTTİ-->
+        </div><!-- widget(footer-menu) BİTTİ-->
+        
+        <div class="widget footer-menu">
+            <div class="widget-content">
+            <ul class="widget-list">    
+            <li><a href="/kalite_politikamiz">Kalite Politikamız</a></li>
+            <li><a href="/bilgi_guvenligi_politikamiz">Bilgi Güvenliği Politikamız</a></li>
+            </ul><!-- widget-list(footer-menu) BİTTİ-->
+            </div><!-- widget-content(footer-menu) BİTTİ-->
+            </div><!-- widget(footer-menu) BİTTİ-->
+        
+        <div class="widget footer-contact-area">
+        <div class="widget-content">
+        <a class="footer-sub-logo" href="/hakkimizda"><img src="{%static 'images/signum-footer-logo.png'%}" alt="Signum Creative"></a>
+        <ul class="widget-list">
+        <li><span><address>Üniversiteler Mahallesi 1596 Cadde 5. AR-Ge Binası No: 8B Kat: 3 / 12 Beytepe 06800 Çankaya / Ankara</address></span></li>
+        <li><span><strong>0312 491 28 13</strong></span></li>
+        </ul>
+        </div><!--widget-content(footer-contact-area) bitti-->
+        </div><!--widget(footer-contact-area) bitti-->    
+        
+        
+        <div class="widget footer-social">
+        <div class="widget-content">
+        <div class="social-wrap">
+        <a class="icon32-linkedin" href="https://www.linkedin.com/company/1173333" target="_blank" title="Linkedin'de Takip Et"></a>
+        <a class="icon32-instagram" href="#" target="_blank" title="Instagram'da Takip Et"></a>
+        
+        <div class="clear"></div>
+        </div>
+        
+        </div><!-- widget-content(footer-social) BİTTİ-->
+        </div><!-- widget(footer-social) BİTTİ-->
+        </div><!-- KOLON (3. kolon) BİTTİ-->
+        
+        </div><!-- ROW (footer kapsayan) BİTTİ-->
+        </div><!-- footer BİTTİ-->
+        </div><!-- footer-wrapper BİTTİ-->
+        
+        <div id="footer-bottom">
+        <p><strong>Signumtte 2022.</strong> Tüm hakkı saklıdır.<strong>USERAPP tarafından tasarlanmıştır</strong></p>
+        </div><!-- footer-bottom-wrapper BİTTİ-->
+        
+     <!--  ------------------------------------------------------  -->
+    <script type="application/javascript" src="{%static 'js/swiper.js'%}"></script>
+    <script type="application/javascript" src="{%static 'js/jquery-min.js'%}"></script>
+    <script type="application/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'js/fancybox/jquery.fancybox.pack.js'%}"></script>
+    <script type="application/javascript" src="{%static 'js/lazyloadxt.js'%}"></script>
+    <script type="application/javascript" src="{%static 'js/jquery.cookie.js'%}"></script>
+    <script src="{%static 'js/alljs.js'%}"></script>
+
+    </body> 
+</html>

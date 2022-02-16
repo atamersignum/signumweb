@@ -1,0 +1,26 @@
+{% extends 'signum/base.html' %}
+{%load static%}
+
+{% block content %} 
+<br><br>
+
+
+<div class="row justify-content-left text-left">
+  <div class="col-md-3 col-sm-4 col-xs-1">
+  </div>
+  <div class="col-md-6 col-sm-4 col-xs-10">
+    {%if announcement%}
+        {{announcement.rich_text|safe}}
+    {%endif%}
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-1">
+  </div>
+  
+</div>
+
+
+{% endblock %}
+    
+    
+    
+

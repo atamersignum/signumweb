@@ -1,0 +1,125 @@
+/*Author- Engineer: Hakan GUNGOR */
+
+@import 'parts/sass';
+@import 'parts/header-menu';
+@import 'parts/main-slider';
+@import 'parts/windesk-platform-summary-text';
+@import 'parts/text-image-blocks';
+@import 'parts/works-in-progress-summary';
+@import 'parts/news-announcement';
+@import 'parts/hyperlinks';
+@import 'parts/contact-area';
+@import 'parts/footer';
+@import 'parts/content-header-image-area';
+@import 'parts/content-texts';
+@import 'parts/number-counter-area';
+
+/***********************/
+*, body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+  font-family: $fregular;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+*, ul, p, span {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+a {
+    text-decoration: none;
+}
+textarea, input, select {
+    outline: 0;
+}
+img {
+    border: 0;
+}
+.clear {
+    clear: left;
+}
+.rightclear {
+  clear: right;
+}
+.clearright {
+    clear: right;
+}
+.bothclear {
+    clear: both;
+}
+textarea, input, select {
+    outline: 0;
+}
+h1,h2,h3 {
+    font-weight: normal;
+}
+
+//Sitede ortak kullanilan CSS ler
+.title-bottom-line-wrapper.active {
+    width: 100%;
+    max-width: 110px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+.title-bottom-line {
+    height:0px;
+    width:1px;
+    border-bottom:2px solid #353F4B;
+  }
+}
+.title-bottom-line-wrapper.active .title-bottom-line {
+    -webkit-animation: increase 3s;
+    -moz-animation:    increase 3s; 
+    -o-animation:      increase 3s; 
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+}
+
+
+/*ICON LAR*/
+
+
+[class*=" icon32-"], [class^=icon32-] {
+    background: url(../images/icon32.png) no-repeat;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+  
+  .icon32-facebook {
+    background-position: 0 0px !important;
+  }
+  .icon32-twitter {
+    background-position: 0 -32px !important;
+  }
+  .icon32-linkedin {
+    background-position: 0 -64px !important;
+  }
+  .icon32-instagram {
+    background-position: 0 -96px !important;
+  }
+  .icon32-close {
+    background-position: 0 -128px !important;
+  }
+  .icon32-close {
+    background-position: 0 -160px !important;
+  }
+  .icon32-subscribe {
+    background-position: 0 -352px !important;
+  }
+  .icon32-kariyer {
+    background-position: 0 -384px !important;
+  }
+  .icon32-kariyer2 {
+    background-position: 0 -416px !important;
+  }
+  .icon32-linkedin2 {
+    background-position: 0 -448px !important;
+  }

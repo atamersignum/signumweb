@@ -1,0 +1,98 @@
+.number-blocks-wrapper {
+    background-color: #F4F4F4;
+    h2 {
+        font-family: $fbold;
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .number-block {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        min-height: 320px;
+        padding:30px;
+        color: #FFF;
+        float: left;
+        margin-right: 30px;
+        h3 {
+            font-family: $fbold;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            @include centerer(200px);
+        }
+        .number-item {
+            font-family: $fbold;
+            @include centerer(170px);
+            margin-top: 20px;
+            .action {
+                display: block;
+                text-align: center;
+            }
+            .value {
+                font-size: 30px;
+                &::before {
+                    content: '%';
+                }
+            }
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            @include centerer();
+        }
+    }
+    .block1 {
+        background-color: #EE4423;
+    }
+    .block2 {
+        background-color: #E5AA32;
+    }
+    .block3 {
+        background-color: #D1802E;
+    }
+    .single-value {
+        li {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .multiple-value {
+        min-width: 72px;
+        li {
+            display: inline-block;
+            padding-right: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+@media (max-width: 1038px) {
+    .number-block {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 707px) {
+    .number-blocks-wrapper {
+        .number-block {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            float: none;
+        }
+    }
+}
+@media (max-width: 959px) {
+    .number-blocks-wrapper {
+        h2 {
+            margin-bottom: 18px;
+            margin-bottom: 20px;
+            line-height: 28px;
+            font-size: 18px;
+        }
+    }
+}

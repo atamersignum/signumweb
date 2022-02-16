@@ -1,0 +1,190 @@
+$bcolor: #00ABE3; // site kullanilan mavi ton
+$b2color: #8ed8f8; // site icerisindeki yazilarda kullanilan mavi ton
+$b3color: #00c0f3; // menude kullanilan mavi ton
+$g1color: #353F4B; //gri- başlıkların griligi platform-content-type1
+$g2color: #353f4b; // kullanilan griligin bir diger tonu
+$g3color: #03363d;  // ara basliklarin yesil tonuna benzer gri tonlari
+$g4color: #3f4a56;  // arkaplan headerr footerr gri tonlari
+
+$p1: relative;    // position relative
+$p2: absolute;    // position absolute
+
+$fregular: 'open_sansregular', sans-serif;      //font family open-sans-regular
+$fbold: 'open_sansbold', sans-serif;      //font family open-sans-bold
+
+/*Fonts on site*/
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(../css/fonts/OpenSans-Regular-webfont.eot);
+    src: url(../css/fonts/OpenSans-Regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../css/fonts/OpenSans-Regular-webfont.woff) format('woff'),
+         url(../css/fonts/OpenSans-Regular-webfont.ttf) format('truetype'),
+         url(../css/fonts/OpenSans-Regular-webfont.svg#open_sansregular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url(../css/fonts/OpenSans-Bold-webfont.eot);
+    src: url(../css/fonts/OpenSans-Bold-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../css/fonts/OpenSans-Bold-webfont.woff) format('woff'),
+         url(../css/fonts/OpenSans-Bold-webfont.ttf) format('truetype'),
+         url(../css/fonts/OpenSans-Bold-webfont.svg#open_sansbold) format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@mixin centerer($max-width:false) {
+    @if not $max-width {
+    margin-right: auto ;
+    margin-left: auto;
+
+    }
+    @else {
+    width: 100%;
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+
+/*Anasayfa Hyperlink Alani (Referanslar) CSS leri*/
+@mixin hiperlinkcreater($count) {
+    background-image: url("../images/logolar/hyperlink#{$count}.png");
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url("../images/logolar/hyperlink#{$count}-hover.png");
+    }
+}
+
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+@keyframes windeskMainSliderFromLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes increase {
+    100% {
+        width: 110px;
+    }
+}
+
+@keyframes ken {
+    0% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes wipe-out-left {
+    0% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+    100% {
+        clip-path: inset(0 0 0 100%);
+        -webkit-clip-path: inset(0 0 0 100%);
+    }
+}
+@keyframes wipe-in-up {
+    0% {
+        clip-path: inset(100% 0 0 0);
+        -webkit-clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+}
+@keyframes wipe-out-up {
+    0% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+    100% {
+        clip-path: inset(100% 0 0 0);
+        -webkit-clip-path: inset(100% 0 0 0);
+    }
+}
+@keyframes wipe-in-right {
+    0% {
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+}
+@keyframes wipe-out-right {
+    0% {
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
+    }
+    100% {
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+    }
+}
+@keyframes wipe-in-down {
+    0% {
+        clip-path: inset(0 0 100% 0);
+        -webkit-clip-path: inset(0 0 100% 0);
+    }
+    100% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+}
+@keyframes wipe-out-down {
+    0% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+    100% {
+        clip-path: inset(0 0 100% 0);
+        -webkit-clip-path: inset(0 0 100% 0);
+    }
+}
+@keyframes wipe-in-left {
+    0% {
+        clip-path: inset(0 0 0 100%);
+        -webkit-clip-path: inset(0 0 0 100%);
+    }
+    100% {
+        clip-path: inset(0);
+        -webkit-clip-path: inset(0);
+    }
+}
